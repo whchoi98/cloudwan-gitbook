@@ -180,7 +180,7 @@ Outputs:
 * &#x20;AWS 관리콘솔에서 **`"VPC"`** 를 입력하고, VPC 콘솔을 실행합니다.&#x20;
 * **`AWS Cloud WAN - Network Manager - Get Started`** 를 선택합니다.&#x20;
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (2).png>)
 
 생성된 Global Network를 확인하고 선택합니다.&#x20;
 
@@ -209,7 +209,7 @@ Policy versions를 선택합니다. Code로 일괄배포되어 version 1만 생�
 
 * Edge locations , Segments&#x20;
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (2).png>)
 
 * Attachment Policies&#x20;
 
