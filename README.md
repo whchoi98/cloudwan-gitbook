@@ -1,6 +1,13 @@
+---
+description: 'Update : 2022-08-18'
+cover: >-
+  https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHwxfHxnbG9iYWx8ZW58MHx8fHwxNjYwODE1NzI1&ixlib=rb-1.2.1&q=80
+coverY: 0
+---
+
 # AWS Cloud WAN
 
-### 글로벌 광역 네트워크 구축, 관리 및 모니터링 <a href="#build.2c_manage.2c_and_monitor_global_wide_area_networks" id="build.2c_manage.2c_and_monitor_global_wide_area_networks"></a>
+## 소개 <a href="#build.2c_manage.2c_and_monitor_global_wide_area_networks" id="build.2c_manage.2c_and_monitor_global_wide_area_networks"></a>
 
 ### 작동 방식 <a href="#how_it_works" id="how_it_works"></a>
 
