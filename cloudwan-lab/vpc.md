@@ -4,7 +4,9 @@ description: 'Update : 2022-08-18'
 
 # VPC 배포
 
+## VPC 배포
 
+### ap-northeast-1 VPC 배포
 
 Cloud9 터미널을 4개를 신규 열고, 아래와 같이 4개의 VPC를 구성합니다.&#x20;
 
@@ -56,6 +58,8 @@ aws cloudformation deploy \
 
 ```
 
+### us-east-1 VPC 배포
+
 Cloud9 터미널을 4개를 신규 열고, 아래와 같이 4개의 VPC를 구성합니다.&#x20;
 
 us-east-1 Region의 Blue VPC를 아래와 같이 생성합니다.&#x20;
@@ -106,7 +110,7 @@ aws cloudformation deploy \
 
 ```
 
-
+### eu-central-1 VPC 배포
 
 Cloud9 터미널을 4개를 신규 열고, 아래와 같이 4개의 VPC를 구성합니다.&#x20;
 
