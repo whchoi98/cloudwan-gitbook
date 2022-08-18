@@ -1,5 +1,5 @@
 ---
-description: 'Update : 2022-'
+description: 'Update : 2022-08-18'
 ---
 
 # Segment 구성 및 확인
