@@ -16,7 +16,7 @@ VPC 와 CloudWAN Segment 와 연결합니다
 * Edge Location - 해당 리전
 * Attachment type - VPC
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (1).png>)
 
 * VPC ID - Segment에 연결될 VPC ID
 * Subnet - Attachment 될 Subnet
@@ -46,8 +46,8 @@ VPC 와 CloudWAN Segment 와 연결합니다
 
 Segment에 VPC를 Attachment 할 때 Accept 가 필요합니다. Attachment 생성 후 해당 Attachment ID를 선택하고 Accept 합니다
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 Accept를 수행하면 VPC당 연결시간이 7분 내외 소요 됩니다.&#x20;
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (1).png>)

@@ -10,7 +10,7 @@ Cloud9을 실행하기 위해 아래와 같이 AWS 관리콘솔에서 **`"Cloud9
 
 `AWS 관리 콘솔 - Cloud9 - Create environment`를 선택합니다.
 
-![](<../.gitbook/assets/image (3) (1).png>)
+![](<../.gitbook/assets/image (3) (1) (1).png>)
 
 Cloud9의 이름을 입력합니다
 
@@ -216,7 +216,7 @@ Seoul Region에 생성된 Cloud9 EC2를 선택하고, IAM Role을 변경합니�
 
 * Cloud9 EC2 선택 - Action - Security - Modify IAM Role&#x20;
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6) (2).png>)
 
 앞서 생성한 IAM Role (cloud9admin) 로 변경합니다.&#x20;
 
@@ -226,6 +226,6 @@ Cloud9 콘솔에서 Preference - AWS Settings - Credentials 를 비활성화 시
 
 앞서 선택한 Cloud9admin 의 권한으로 변경됩니다.&#x20;
 
-![](<../.gitbook/assets/image (2) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1).png>)
 
 이제 사전 준비를 위한 모든 구성이 완료 되었습니다.&#x20;

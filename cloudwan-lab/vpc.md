@@ -170,5 +170,5 @@ aws cloudformation deploy \
 * us-east-1
 * eu-central-1
 
-![](<../.gitbook/assets/image (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1) (2).png>)
 

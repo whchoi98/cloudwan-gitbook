@@ -205,7 +205,7 @@ Policy versions를 선택합니다. Code로 일괄배포되어 version 1만 생�
 
 * ASN ranges
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 * Edge locations , Segments&#x20;
 
