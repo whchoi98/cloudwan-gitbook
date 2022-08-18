@@ -2,28 +2,15 @@
 
 * [AWS Cloud WAN](README.md)
 
-## Guides
+## 사전준비 <a href="#prepare" id="prepare"></a>
 
-* [Creating your first project](guides/creating-your-first-project.md)
-* [Creating your first task](guides/creating-your-first-task.md)
-* [Advanced permissions](guides/advanced-permissions.md)
+* [Cloud9 설치](prepare/cloud9.md)
 
-## Fundamentals
+## CloudWAN LAB
 
-* [Projects](fundamentals/projects.md)
-* [Members](fundamentals/members.md)
-* [Task Lists](fundamentals/task-lists.md)
-* [Tasks](fundamentals/tasks.md)
-
-## Use Cases
-
-* [For Designers](use-cases/for-designers/README.md)
-  * [Figma Integration](use-cases/for-designers/figma-integration.md)
-* [For Engineers](use-cases/for-engineers/README.md)
-  * [GitHub Integration](use-cases/for-engineers/github-integration.md)
-* [For Support](use-cases/for-support/README.md)
-  * [Intercom Integration](use-cases/for-support/intercom-integration.md)
-
-## Extras
-
-* [Keyboard Shortcuts](extras/keyboard-shortcuts.md)
+* [VPC 배포](cloudwan-lab/vpc.md)
+* [CloudWAN 배포](cloudwan-lab/cloudwan.md)
+* [Segment 구성 및 확인](cloudwan-lab/segment.md)
+* [VPN 구성 및 CloudWAN 연결](cloudwan-lab/vpn-cloudwan.md)
+* [TGW 구성 및 CloudWAN 연결](cloudwan-lab/tgw-cloudwan.md)
+* [Filtering 구성](cloudwan-lab/filtering.md)
