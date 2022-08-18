@@ -10,13 +10,13 @@ Cloud9을 실행하기 위해 아래와 같이 AWS 관리콘솔에서 **`"Cloud9
 
 `AWS 관리 콘솔 - Cloud9 - Create environment`를 선택합니다.
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (3).png>)
 
 Cloud9의 이름을 입력합니다
 
 * name : mycloud9
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (12).png>)
 
 모든 설정을 기본값으로 사용하고, 인스턴스타입은 t3.small ,Cost-Saving Setting Never로 변경합니다. 절전모드로 변경되는 것을 방지하게 됩니다. 다음 진행 버튼을 계속 누르고 Cloud9을 생성합니다.
 
@@ -24,7 +24,7 @@ Cloud9의 이름을 입력합니다
 * Cost-saving setting : Never
 * 기타 옵션 : 기본
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (10).png>)
 
 2\~3분 후에 Cloud9 이 동작하는 것을 확인 할 수 있습니다. Cloud9 창에서 "+" 버튼을 누르고 New Terminal을 띄워서 터미널을 생성합니다. 추가로 "+"를 계속 생성하게 되면 Terminal을 다중으로 사용할 수 있습니다.
 
@@ -174,3 +174,58 @@ source ~/.bash_profile
 
 ```
 
+
+
+Cloud9 Role 변경
+
+Lab에서는 Cloud9을 기반으로 대부분의 관리콘솔도구로 사용하기 때문에, Cloud9을 위한 권한부여가 필요합니다
+
+IAM을 실행하기 위해 아래와 같이 AWS 관리콘솔에서 **`"IAM"`** 을 입력하고, IAM을 실행합니다.&#x20;
+
+* **`Role - Create role`** 선택
+
+![](<../.gitbook/assets/image (7).png>)
+
+* **`AWS Service - EC2`** 선택
+
+![](<../.gitbook/assets/image (6).png>)
+
+* administratoraccess 를 선택합니다
+
+Permission 필터를 위해 아래 administratoraccess 를 필터해서 Policy를 선택합니다.&#x20;
+
+```
+administratoraccess
+```
+
+![](<../.gitbook/assets/image (4).png>)
+
+Role 이름을 입력하고 , Role을 생성합니다.&#x20;
+
+* Role Name
+
+```
+cloud9admin
+```
+
+![](<../.gitbook/assets/image (8).png>)
+
+Cloud9의 Role을 변경하기 위해 아래와 같이 AWS 관리콘솔에서 **`"EC2"`** 을 입력하고, EC2 콘솔을 실행합니다.&#x20;
+
+Seoul Region에 생성된 Cloud9 EC2를 선택하고, IAM Role을 변경합니다.&#x20;
+
+* Cloud9 EC2 선택 - Action - Security - Modify IAM Role&#x20;
+
+![](../.gitbook/assets/image.png)
+
+앞서 생성한 IAM Role (cloud9admin) 로 변경합니다.&#x20;
+
+![](<../.gitbook/assets/image (11).png>)
+
+Cloud9 콘솔에서 Preference - AWS Settings - Credentials 를 비활성화 시킵니다
+
+앞서 선택한 Cloud9admin 의 권한으로 변경됩니다.&#x20;
+
+![](<../.gitbook/assets/image (2).png>)
+
+이제 사전 준비를 위한 모든 구성이 완료 되었습니다.&#x20;
