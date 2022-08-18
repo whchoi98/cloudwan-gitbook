@@ -190,7 +190,7 @@ IAM을 실행하기 위해 아래와 같이 AWS 관리콘솔에서 **`"IAM"`** �
 
 ![](<../.gitbook/assets/image (6).png>)
 
-* administratoraccess 를 선택합니다
+* **`administratoraccess`** 를 선택합니다.&#x20;
 
 Permission 필터를 위해 아래 administratoraccess 를 필터해서 Policy를 선택합니다.&#x20;
 
