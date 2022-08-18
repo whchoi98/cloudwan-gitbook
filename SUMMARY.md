@@ -11,6 +11,7 @@
 * [목표 구성도 소개](cloudwan-lab/undefined.md)
 * [VPC 배포](cloudwan-lab/vpc.md)
 * [CloudWAN 배포](cloudwan-lab/cloudwan.md)
+* [CloudWAN 연결](cloudwan-lab/cloudwan-1.md)
 * [Segment 구성 및 확인](cloudwan-lab/segment.md)
 * [VPN 구성 및 CloudWAN 연결](cloudwan-lab/vpn-cloudwan.md)
 * [TGW 구성 및 CloudWAN 연결](cloudwan-lab/tgw-cloudwan.md)
