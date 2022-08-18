@@ -190,7 +190,7 @@ Outputs:
 
 * **`Overview, Detail, Topology graph, Topology tree` ** 메뉴를 선택하고 확인해 봅니다.&#x20;
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (2).png>)
 
 * Core Network를 선택하고 메뉴들을 확인해 봅니다
 * **`Core Network - Overview, Details, Sharing, Topology graph, Topology tree, Logical, Routes, Events, Monitoring`**&#x20;
@@ -205,7 +205,7 @@ Policy versions를 선택합니다. Code로 일괄배포되어 version 1만 생�
 
 * ASN ranges
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
 
 * Edge locations , Segments&#x20;
 
