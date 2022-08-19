@@ -13,7 +13,7 @@ coverY: 0
 
 AWS Cloud WAN은 클릭 몇 번으로 글로벌 네트워크를 구축하여 지점, 데이터 센터 및 Amazon Virtual Private Cloud(Amazon VPC)를 연결할 수 있는 중앙 대시보드를 제공합니다. 네트워크 정책을 사용하여 한 위치에서 네트워크 관리 및 보안 작업을 자동화할 수 있습니다. Cloud WAN은 온프레미스 및 AWS 네트워크에 대한 전체 보기를 생성하여 네트워크 상태, 보안 및 성능의 모니터링을 지원합니다.
 
-![](<.gitbook/assets/image (1) (1) (1).png>)
+![](<.gitbook/assets/image (1) (1) (1) (1).png>)
 
 ### 주요 활용 사례 <a href="#build_a_global_network" id="build_a_global_network"></a>
 
