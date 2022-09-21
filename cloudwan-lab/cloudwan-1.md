@@ -25,7 +25,7 @@ VPC 와 CloudWAN Segment 와 연결합니다
 
 * Tag - Key/Value 타입으로 지정
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (2).png>)
 
 아래와 같은 Attachment를 구성합니다.&#x20;
 

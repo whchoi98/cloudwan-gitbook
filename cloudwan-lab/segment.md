@@ -10,7 +10,7 @@ CloudWAN 구성으로 각 리전의 라우팅을 동적으로 처리가 되지�
 
 아래와 같은 정보를 기반으로 각 리전에 생성된 VPC에 라우팅을 추가합니다
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (15).png>)
 
 아래 그림은 NRT-VPC-Blue 의 NRT-VPC-Blue-Private-Subnet-A-RT 라우팅 테이블을 수정하는 예제입니다
 
@@ -18,7 +18,7 @@ CloudWAN 구성으로 각 리전의 라우팅을 동적으로 처리가 되지�
 * Destination : 목적지&#x20;
 * Traget : Core Network
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (2).png>)
 
 정상적으로 추가 되면 아래와 같이 결과가 출력됩니다. &#x20;
 

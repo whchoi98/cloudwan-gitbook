@@ -11,6 +11,7 @@ Cloudformation 에서 배포 과정을 확인 할 수 있습니다.&#x20;
 {% endhint %}
 
 ```
+## corenetwork yaml deploy ##
 aws cloudformation deploy \
   --region us-east-1 \
   --stack-name "CoreNetwork" \
@@ -51,49 +52,74 @@ Resources:
             - 64512-64555
           edge-locations:
             - location: us-east-1
-#              asn: 64512
+            - location: us-west-1
+            - location: us-west-2
             - location: eu-central-1
-#              asn: 64513
+            - location: eu-west-1
             - location: ap-northeast-1
-#              asn: 64514
+            - location: ap-southeast-2
         segments:
           - name: Share
             description: shared segment
             require-attachment-acceptance: true
             edge-locations:
-              - eu-central-1
               - us-east-1
+              - us-west-1
+              - us-west-2
+              - eu-central-1
+              - eu-west-1
               - ap-northeast-1
+              - ap-southeast-2
           - name: Blue
             require-attachment-acceptance: true
             edge-locations:
-              - eu-central-1
               - us-east-1
+              - us-west-1
+              - us-west-2
+              - eu-central-1
+              - eu-west-1
               - ap-northeast-1
+              - ap-southeast-2
           - name: Green
             require-attachment-acceptance: true
             edge-locations:
-              - eu-central-1
               - us-east-1
+              - us-west-1
+              - us-west-2
+              - eu-central-1
+              - eu-west-1
               - ap-northeast-1
+              - ap-southeast-2
           - name: Red
             require-attachment-acceptance: true
             edge-locations:
-              - eu-central-1
               - us-east-1
+              - us-west-1
+              - us-west-2
+              - eu-central-1
+              - eu-west-1
               - ap-northeast-1
+              - ap-southeast-2
           - name: Black
             require-attachment-acceptance: true
             edge-locations:
-              - eu-central-1
               - us-east-1
+              - us-west-1
+              - us-west-2
+              - eu-central-1
+              - eu-west-1
               - ap-northeast-1
+              - ap-southeast-2
           - name: VPN
             require-attachment-acceptance: true
             edge-locations:
-              - eu-central-1
               - us-east-1
+              - us-west-1
+              - us-west-2
+              - eu-central-1
+              - eu-west-1
               - ap-northeast-1
+              - ap-southeast-2
         segment-actions:
           - action: share
             mode: attachment-route
@@ -160,7 +186,7 @@ Resources:
             action:
               association-method: constant
               segment: VPN
-
+      
 Outputs:
   CoreNetworkId:
     Value: !Ref CoreNetwork
@@ -169,9 +195,8 @@ Outputs:
     Value: !GetAtt CoreNetwork.CoreNetworkArn
     Description: Core Network ARN
 
+
 ```
-
-
 
 ## CloudWAN 배포 확인&#x20;
 
@@ -190,12 +215,16 @@ Outputs:
 
 * **`Overview, Detail, Topology graph, Topology tree` ** 메뉴를 선택하고 확인해 봅니다.&#x20;
 
-![](<../.gitbook/assets/image (2) (2).png>)
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 * Core Network를 선택하고 메뉴들을 확인해 봅니다
 * **`Core Network - Overview, Details, Sharing, Topology graph, Topology tree, Logical, Routes, Events, Monitoring`**&#x20;
 
-![](<../.gitbook/assets/image (7).png>)
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Policy versions를 선택합니다. Code로 일괄배포되어 version 1만 생성되어 있습니다
 
@@ -209,7 +238,7 @@ Policy versions를 선택합니다. Code로 일괄배포되어 version 1만 생�
 
 * Edge locations , Segments&#x20;
 
-![](<../.gitbook/assets/image (3) (2).png>)
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 * Attachment Policies&#x20;
 
