@@ -220,11 +220,11 @@ Outputs:
 * Core Network를 선택하고 메뉴들을 확인해 봅니다
 * **`Core Network - Overview, Details, Sharing, Topology graph, Topology tree, Logical, Routes, Events, Monitoring`**&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Policy versions를 선택합니다. Code로 일괄배포되어 version 1만 생성되어 있습니다
 

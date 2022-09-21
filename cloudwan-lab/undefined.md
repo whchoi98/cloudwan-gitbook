@@ -13,5 +13,5 @@ CloudWAN LAB은 아래와 같은 구성도를 구현하고, 정책을 적용하�
 * Segment : Blue, Green, Red, Black, VPN, Shared
 * VPC : Shared, Blue, Green, Red, Black
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 

@@ -18,7 +18,7 @@ CloudWAN 구성으로 각 리전의 라우팅을 동적으로 처리가 되지�
 * Destination : 목적지&#x20;
 * Traget : Core Network
 
-![](<../.gitbook/assets/image (2) (2).png>)
+![](<../.gitbook/assets/image (2) (2) (2).png>)
 
 정상적으로 추가 되면 아래와 같이 결과가 출력됩니다. &#x20;
 
