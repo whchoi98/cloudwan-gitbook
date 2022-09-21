@@ -4,7 +4,7 @@
 
 AWS Cloud9은 브라우저만으로 코드를 작성, 실행 및 디버깅할 수 있는 클라우드 기반 IDE(통합 개발 환경)입니다. 코드 편집기, 디버거 및 터미널이 포함되어 있습니다. Cloud9은 JavaScript, Python, PHP를 비롯하여 널리 사용되는 프로그래밍 언어를 위한 필수 도구가 사전에 패키징되어 제공되므로, 새로운 프로젝트를 시작하기 위해 파일을 설치하거나 개발 머신을 구성할 필요가 없습니다. Cloud9 IDE는 클라우드 기반이므로, 인터넷이 연결된 머신을 사용하여 사무실, 집 또는 어디서든 프로젝트 작업을 할 수 있습니다. 또한, Cloud9은 서버리스 애플리케이션을 개발할 수 있는 원활한 환경을 제공하므로 손쉽게 서버리스 애플리케이션의 리소스를 정의하고, 디버깅하고, 로컬 실행과 원격 실행 간에 전환할 수 있습니다. Cloud9에서는 개발 환경을 팀과 신속하게 공유할 수 있으므로 프로그램을 연결하고 서로의 입력 값을 실시간으로 추적할 수 있습니다.
 
-### Cloud9 생성&#x20;
+### 1. Cloud9 생성&#x20;
 
 Cloud9을 실행하기 위해 아래와 같이 AWS 관리콘솔에서 **`"Cloud9"`** 을 입력하고, Cloud9을 실행합니다
 
@@ -32,11 +32,11 @@ Cloud9의 이름을 입력합니다
 
 ## Cloud9 환경 구성
 
-### 기본 도구 설치&#x20;
+### 2. 기본 도구 설치&#x20;
 
 Cloud9 IDE는 이미 AWS CLI가 설치되어 있습니다. 하지만 기본 1.x 버전이 설치되어 있습니다.
 
-아래 명령을 통해 CLI를 2.0으로 업그레이드합니다.
+Cloud9 Terminal 에서 아래 명령을 통해 CLI를 2.0으로 업그레이드합니다.
 
 ```
 ### AWS Cli 2.0 Install
@@ -55,7 +55,7 @@ complete -C '/usr/local/bin/aws_completer' aws
 
 ```
 
-Private Subnet의 EC2는 외부에서 직접 접속이 불가능합니다. Cloud9에서 연결이 가능하도록 Session Manager Plugin을 설치합니다.&#x20;
+Private Subnet의 EC2는 외부에서 직접 접속이 불가능합니다. Cloud9에서 연결이 가능하도록 Cloud9 Terminal 에서 Session Manager Plugin을 설치합니다.&#x20;
 
 ```
 ### Session Manager Plugin
@@ -64,7 +64,7 @@ sudo sudo yum install -y session-manager-plugin.rpm
 
 ```
 
-기타 필요한 패키지를 설치합니다.&#x20;
+Cloud9 Terminal 에서 기타 필요한 패키지를 설치합니다.&#x20;
 
 ```
 ### util setup
@@ -77,9 +77,7 @@ for command in kubectl jq envsubst aws
 
 ```
 
-
-
-### Keypair 만들기
+### 3. Keypair 만들기
 
 keypair를 Cloud9에서 생성합니다.
 
@@ -134,17 +132,29 @@ chmod 400 ./mykey.pem
 
 ```
 ## SSH key export
+## 서울 리전 Public Key 전송 
 cd ~/environment/
 aws ec2 import-key-pair --key-name "mykey" --public-key-material fileb://./mykey.pub --region ap-northeast-2
 
+## 도쿄 리전 Public Key 전송 
 cd ~/environment/
 aws ec2 import-key-pair --key-name "mykey" --public-key-material fileb://./mykey.pub --region ap-northeast-1
 
+## 버지니아 리전 Public Key 전송 
 cd ~/environment/
 aws ec2 import-key-pair --key-name "mykey" --public-key-material fileb://./mykey.pub --region us-east-1
 
+## 오레 리전 Public Key 전송 
+cd ~/environment/
+aws ec2 import-key-pair --key-name "mykey" --public-key-material fileb://./mykey.pub --region us-west-2
+
+## 프랑크푸르트 리전 Public Key 전송 
 cd ~/environment/
 aws ec2 import-key-pair --key-name "mykey" --public-key-material fileb://./mykey.pub --region eu-central-1
+
+## 아일랜 리전 Public Key 전송 
+cd ~/environment/
+aws ec2 import-key-pair --key-name "mykey" --public-key-material fileb://./mykey.pub --region eu-west-1
 
 ```
 
