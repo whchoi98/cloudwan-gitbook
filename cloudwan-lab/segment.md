@@ -18,17 +18,64 @@ CloudWAN 구성으로 각 리전의 라우팅을 동적으로 처리가 되지�
 * Destination : 목적지&#x20;
 * Traget : Core Network
 
-![](<../.gitbook/assets/image (2) (2) (2).png>)
+![](<../.gitbook/assets/image (2) (2) (2) (1).png>)
 
 정상적으로 추가 되면 아래와 같이 결과가 출력됩니다. &#x20;
 
 ![](<../.gitbook/assets/image (6).png>)
 
+aws cli로 일괄 라우팅 적용을 위해, 사전에 CoreNetwork ARN 정보를 확인하고 복사해 둡니다. 그리고 아래에서 처럼 변수에 저장합니다.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+cloud9 terminal에서도 확인이 가능합니다.
+
+```
+aws cloudformation describe-stacks --stack-name CoreNetwork --region us-east-1 | jq -r '.Stacks[].Outputs' | grep networkmanager
+
+```
+
+아래에서 처럼 변수에 저장합니다.
+
+```
+export core_network_arn='arn_output'
+echo "export core_network_arn=${core_network_arn}" | tee -a ~/.bash_profile
+source ~/.bash_profile
+
+```
+
+routing table id와 각 VPC CIDR 주소를 변수에 입력해 둡니다.&#x20;
+
+```
+## Blue,Green Route Table ID ##
+~/environment/cloudwan/green_route_table_id.sh
+~/environment/cloudwan/blue_route_table_id.sh
+source ~/.bash_profile
+
+##CIDR 주소##
+~/environment/cloudwan/cidr_table.sh
+
+```
+
+Blue,Green Segment를 통해서 각 리전의 VPC들이 통신이 가능하도록, Routing Table을 추가합니다.
+
+```
+##routing table add##
+source ~/.bash_profile
+~/environment/cloudwan/blue_routing_add.sh
+~/environment/cloudwan/green_routing_add.sh
+
+```
+
+정상적으로 라우팅 테이블들이 추가 되었는지 확인해 봅니다.&#x20;
+
+
+
 ### EC2 접속 정보 확인
 
 
 
-Cloud9 terminal 에서 아래 명령을 실행시켜서, 각 리전의 Private Subnet EC2의 id를 저장합니다
+Cloud9 terminal 에서 아래 명령을 실행시켜서, 각 리전의 private Subnet EC2의 id를 저장합니다
 
 ```
 ./aws_ec2_ext_nrt.sh | grep "Blue-Private" >> /home/ec2-user/environment/Blue-Private.txt

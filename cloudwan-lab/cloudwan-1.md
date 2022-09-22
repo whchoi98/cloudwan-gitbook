@@ -29,13 +29,13 @@ VPC 와 CloudWAN Segment 와 연결합니다
 
 아래와 같은 Attachment를 구성합니다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 Segment에 VPC를 Attachment 할 때 Accept 가 필요합니다. Attachment 생성 후 해당 Attachment ID를 선택하고 Accept 합니다
 
 ![](<../.gitbook/assets/image (1) (1) (1).png>)
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Accept를 수행하면 VPC당 연결시간이 7분 내외 소요 됩니다.&#x20;
 
